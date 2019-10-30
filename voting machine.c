@@ -12,7 +12,7 @@ void main()
 	{
 		printf("Welcome To Voting System.\nEnter 1 to start voting : ");
 	    scanf("%d",&e);
-	if(dec==1)
+	if(dec==e)
 	{
 		printf("\nType 1 to vote for can1:Rahul Modi");
 		printf("\nType 2 to vote for can2:Vedant Gandhi");
