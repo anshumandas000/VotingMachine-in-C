@@ -1,9 +1,9 @@
 #include<stdio.h>
 #include<conio.h>
-int main()
+void main()
 {
 	int age;
-	int total=0,can1=0,can2=0,can3=0,can4=0,can5=0,can6=0,can7=0,can8=0,can9=0,can10=0,e,dec,g;
+	int total=0,can1=0,can2=0,can3=0,can4=0,can5=0,can6=0,can7=0,can8=0,can9=0,can10=0,e,dec=1,g;
 	start:
 	printf("\t\t\t****************WELCOME TO ELECTION 2017***********************");
 	printf("\nEnter Your Age:");
@@ -59,10 +59,10 @@ int main()
 				can10=can10+1;
 				break;
 		default:
-			printf("Sorry Invalid entry!!!\n\n\n\n ****TRY AGAIN****");
+			printf("\nSorry Invalid entry!!!\n\n\n\n ****TRY AGAIN****");
 		}
 		total=total+1;
-		printf("\n\nTotal Votes Casted: %d",total);
+		printf("\n\n\nTotal Votes Casted: %d",total);
 		printf("\ncan1  : %d",can1);
 		printf("\ncan2  : %d",can2);
 		printf("\ncan3  : %d",can3);
@@ -86,6 +86,6 @@ int main()
 	}
 }
 	else
-	printf("You Aren't Eligible For Voting");
+	printf("You Aren't Eligible For Voting!!!");
 	getch();
 }
