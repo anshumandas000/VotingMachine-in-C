@@ -3,7 +3,7 @@
 int main()
 {
 	int age;
-	int total=0,can1=0,can2=0,can3=0,can4=0,can5=0,can6=0,can7=0,can8=0,can9=0,can10=0,e,dec,g;
+	int total_voters=0,can1=0,can2=0,can3=0,can4=0,can5=0,can6=0,can7=0,can8=0,can9=0,can10=0,Elect,choice,g;
 	start:
 	printf("\t\t\t****************WELCOME TO ELECTION 2017***********************");
 	printf("\nEnter Your Age:");
@@ -11,8 +11,8 @@ int main()
 	if(age>=18)
 	{
 		printf("Welcome To Voting System.\nEnter 1 to start voting : ");
-	    scanf("%d",&e);
-	if(dec==1)
+	    scanf("%d",&choice);
+	if(choice==1)
 	{
 		printf("\nType 1 to vote for can1:Rahul Modi");
 		printf("\nType 2 to vote for can2:Vedant Gandhi");
@@ -24,9 +24,9 @@ int main()
 		printf("\nType 8 to vote for can8:");
 		printf("\nType 9 to vote for can9:");
 		printf("\nType 10 to vote for can10:\n\n");
-		scanf("%d",&e);
+		scanf("%d",&Elect);
 		printf("\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a");
-		switch(e)
+		switch(Elect)
 		{
 			case 1:
 				can1=can1+1;
@@ -61,8 +61,8 @@ int main()
 		default:
 			printf("Sorry Invalid entry!!!\n\n\n\n ****TRY AGAIN****");
 		}
-		total=total+1;
-		printf("\n\nTotal Votes Casted: %d",total);
+		total_voters=total_voters+1;
+		printf("\n\nTotal Votes Casted: %d",total_voters);
 		printf("\ncan1  : %d",can1);
 		printf("\ncan2  : %d",can2);
 		printf("\ncan3  : %d",can3);
