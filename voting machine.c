@@ -3,7 +3,7 @@
 int main()
 {
 	int age;
-	int total=0,can1=0,can2=0,can3=0,can4=0,can5=0,can6=0,can7=0,can8=0,can9=0,can10=0,e,dec,g;
+	int total=0,can1=0,can2=0,can3=0,can4=0,can5=0,can6=0,can7=0,can8=0,can9=0,can10=0,e,dec=1,g;
 	start:
 	printf("\t\t\t****************WELCOME TO ELECTION 2017***********************");
 	printf("\nEnter Your Age:");
@@ -12,7 +12,7 @@ int main()
 	{
 		printf("Welcome To Voting System.\nEnter 1 to start voting : ");
 	    scanf("%d",&e);
-	if(dec==1)
+	if(dec==e)
 	{
 		printf("\nType 1 to vote for can1:Rahul Modi");
 		printf("\nType 2 to vote for can2:Vedant Gandhi");
@@ -59,7 +59,7 @@ int main()
 				can10=can10+1;
 				break;
 		default:
-			printf("Sorry Invalid entry!!!\n\n\n\n ****TRY AGAIN****");
+			printf("\nSorry Invalid entry!!!\n\n\n\n ****TRY AGAIN****");
 		}
 		total=total+1;
 		printf("\n\nTotal Votes Casted: %d",total);
@@ -86,6 +86,6 @@ int main()
 	}
 }
 	else
-	printf("You Aren't Eligible For Voting");
+	printf("You Aren't Eligible For Voting!!!");
 	getch();
 }
